@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 06 forms</title>
+    <style>
+        form {
+            /* width: 320px; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Class Forms</h1>
+    <form method="get">
+        <label for="name">Name:</label>
+        <br>
+        <input 
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Digite seu nome"
+            required
+        >
+        <br>
+        <br>
+        
+    </form>
+
+   <form>
+</form>
+<form method="get">
+    <fieldset>
+        <legend>Login</legend>
+        <section>
+            <label for="email">E-mail</label>
+            <br>
+            <input
+                type="email"
+                id="email"
+                name="email"
+            >
+        </section>
+        <section>
+            <section>
+                <label for="password">Password</label>
+                <br>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                >
+            </section>
+        </section>
+    </fieldset>
+</form>
+
+<br><br>
+
+<form method="get">
+    <input
+        type="tnumber"
+        placeholder="Digite sua idade"
+        max="100"
+        min="0"
+        step="2"
+    >
+</form>
+<br>
+<form method="get">
+    <input
+        type="datetime-local"
+            >
+    <br><br>
+    
+    <input type="range"
+            min="0"
+            max="100"
+            step="5"
+            name="range"
+        >
+</form>
+
+</form>
+
+<br>
+
+<input
+ type="file"
+ accept="pdf/*"
+ multiple
+ >
+ <br><br>
+ <input 
+ type="color"
+ value="#eee"
+>
+
+<datalist id="groupColor">
+    <option #ff0000></option>
+    <option #00ff00></option>
+    <option #0000ff></option>
+</datalist>
+
+<br><br>
+
+<label for="html">HTML</label>
+<input type="checkbox"
+id="html"
+>
+<label for="css">CSS</label>
+<input type="checkbox"
+id="css"
+>
+
+<br><br>
+
+<label for="yes">SIM</label>
+<input 
+type="radio" 
+name="term"
+id="yes"
+checked
+>
+
+<label for="no">NÃO</label>
+<input 
+type="radio" 
+name="term"
+id="no"
+checked
+>
+<br><br>
+
+<label for="fruts"></label>
+<select name="feuts" id="fruts">
+    <option value="manga">Manga</option>
+    <option value="acerola">Acerola</option>
+    <option value="abacaxi">Abacaxi</option>
+</select>
+
+<br><br>
+
+<label for="">Observaçoes</label><br>
+    <textarea 
+        name="" 
+        id="" 
+        cols="30" 
+        rows="10"
+        maxlength="255"
+    ></textarea>
+
+<br><br>
+
+<button type="submit">
+    Enviar
+</button>
+
+</body>
+</html>
+
+

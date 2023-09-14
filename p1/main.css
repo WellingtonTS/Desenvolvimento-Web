@@ -1,0 +1,40 @@
+.ourServicesContanier {
+  padding: 2.4rem 0;
+}
+.ourServicesContanier h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.cardsOurServices {
+  margin-top: 2.2rem;
+  padding-left: 2.4rem;
+  display: flex;
+  align-items: start;
+  gap: 2.4rem;
+}
+.cardOurServices {
+  width: 32rem;
+}
+.cardOurServices .imageBox {
+  width: 22rem;
+  background: linear-gradient(315deg, #dbefff), #f5fafe, #d1d8e8;
+  border-radius: 0.8rem 0.8rem 0 0;
+  padding: 0,4rem 4,2rem 1.2rem;
+}
+.cardOurServices img {
+  width: 100%;
+  transition: scale 300ms;
+}
+.cardOurServices img:hover {
+  scale: 1.05;
+}
+.cardOurServices .textBox {
+  text-align: justify;
+}
+.cardOurServices h3 {
+  font-size: 1.6rem;
+  margin: 1.2rem 0 0.4rem;
+}
+.cardOurServices p {
+  font-size: 1.4rem;
+}

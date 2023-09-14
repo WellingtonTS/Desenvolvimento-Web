@@ -1,0 +1,122 @@
+header {
+  width: 100%;
+  padding: 1.6rem, 1.6rem 0;
+  background: linear-gradient(315deg, #2966c2, #2865c2, #1e4b8f);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.circle {
+  border-radius: 100%;
+  background: #fff2;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+}
+.circle1 {
+  height: 12rem;
+  width: 12rem;
+  bottom: -10%;
+  right: 11rem;
+} 
+.circle2 {
+  height: 26rem;
+  width: 26rem;
+  bottom: -3%;
+  right: -8rem;
+}
+.wheelIcon img {
+  width: 90rem;
+  height: 90rem;
+  filter: invert(100%) blur(10px);
+  opacity: 0.1;
+  position: absolute;
+  bottom: -3rem;
+  right: -10rem;
+  z-index: -1;
+  animation: rotate 15s linear infinite;
+}
+.boxEntrar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #052e6d;
+  border-bottom: 1px solid #fff4;
+}
+.imgLogo {
+  width: 9.2rem;
+  margin-top: .5rem;
+}
+.boxMenu {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center; 
+  border-bottom: 1px solid #fff4;
+}
+nav ul  {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .4rem;
+}
+nav a {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px #0002;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+}
+nav a:hover {
+  background: #fff2;
+}
+.containerSlogan {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1.2rem;
+}
+.boxSlogan {
+  max-width: 32rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1.6rem;
+}
+.boxSlogan h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 2px #0002;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 3s 1s steps(35) both;
+}
+.boxSlogan p {
+  font-size: 1.3rem;
+  text-shadow: 1px 1px 2px #0002;
+}
+.boxSlogan button {
+  margin-top: .6rem;
+  padding: 0.6rem;
+  border-radius: 1.2rem;
+  width: 10rem;
+  background: linear-gradient(#ffc44f, #cc9d30);
+  color: white;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px #0004;
+  box-shadow: 1px 1px 2px #0002;
+  transition: filter 200ms, sacle 200ms ;
+  animation: pulse 1s 3.7s;
+}
+.boxSlogan button:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+  scale: 1.01;
+}
+.boxImageSaleswoman img {
+  width: 14rem;
+  position: relative;
+  z-index: 1;
+}

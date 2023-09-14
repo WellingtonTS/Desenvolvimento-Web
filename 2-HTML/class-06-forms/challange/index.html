@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+  </head>
+<body>
+  <header>
+    <h1>Cadastro</h1>
+  </header>
+  <main>
+    <form method="get">
+      <fieldset class="personalData">
+        <label for="">Nome:</label>
+          <input
+           id="Name"
+           type="text"
+           autofocus required placeholder="Digite seu nome"
+           name="Name">
+
+        <br><br>
+        <label for="">Nascimento: </label>
+          <input
+           id="Nasc"
+           type="date"
+           name="Nasc">
+        
+        <br><br>
+          <label for="">RG:</label>
+          <input
+           id="RG"
+           type="text"
+           required placeholder="Informe seu RG"
+           name="RG">
+
+        <br><br>
+          <label for="">CPF:</label>
+          <input
+           id="CPF"
+           type="text"
+           required placeholder="Informe seu CPF"
+           name="CPF">
+
+
+        <br><br>
+          <label for="">Masculino</label>
+          <input
+           id="masculine"
+           type="radio"
+           name="sexo"
+           value="M">
+
+          <label for="">Feminino</label>
+          <input
+           id="feminine"
+           type="radio"
+           name="sexo"
+           value="F">
+      </fieldset>
+
+      <br>
+      <fieldset class="languagesData">
+        <legend>
+          LINGUAGENS DE DOMÍNIO
+        </legend>
+        
+        <section>
+            <input id="html" type="checkbox">
+            <label for="html">HTML</label>      
+
+            <input id="css" type="checkbox">
+            <label for="css">CSS</label>      
+
+            <input id="javascript" type="checkbox">
+            <label for="javascript">JavaScript</label>      
+
+            <input id="sql" type="checkbox">
+            <label for="sql">SQL</label>      
+        </section>
+      </fieldset>
+
+      <br>
+      <fieldset class="loginData">
+        <legend>
+          DADOS DE LOGIN
+        </legend>
+
+        <section>
+          <label for="email">E-mail:</label>
+          <input
+           type="email"
+           id="email"
+           required name="email">
+        </section>
+
+        <br>
+        <section>
+          <label for="password">Senha:</label>
+          <input
+           type="password"
+           id="password"
+           minlength="8"
+           required placeholder="Mínimo de 8 caracteres"
+           name="password">
+        </section>
+
+        <br>
+        <section>
+          <label for="photo">Foto:</label>
+          <input
+           type="file"
+           id="photo"
+           accept="image/*"
+           name="photo">
+        </section>
+      </fieldset>
+
+      <br>
+      <fieldset class="obsData">
+        <section>
+          <label for="">Observação</label><br>
+          <textarea
+          name="" 
+          id="" 
+          cols="30" 
+          rows="10"
+          maxlength="255"
+          ></textarea>
+        </section>
+      </fieldset>
+
+      <br>
+      <button type="submit">Salvar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </main>
+</body>
+</html>

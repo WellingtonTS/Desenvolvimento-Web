@@ -1,0 +1,46 @@
+.container {
+  border: 1px solid black;
+  /* padding: 8px; */
+  height: 80vh;
+  display: flex;
+}
+
+.square {
+  height: 80px;
+  width: 80px;
+  color: white;
+  padding: 8px;
+  font-size: 24px;
+}
+.square:nth-child(1) {
+  background: steelblue;
+  align-self: flex-end;
+  order: 1;
+
+}
+
+.square:nth-child(2) {
+  background: orange;
+  padding: 16px;
+  align-items: center;
+  order: 2;
+}
+
+.square:nth-child(3) {
+  background: teal;
+  padding: 24px;
+  order: 3;
+}
+
+.square:nth-child(4) {
+  background: coral;
+  padding: 32px;
+}
+.square:nth-child(5) {
+  background: purple;
+  padding: 40px;
+}
+.square:nth-child(6) {
+  background: lightslategray;
+  padding: 48px;
+}

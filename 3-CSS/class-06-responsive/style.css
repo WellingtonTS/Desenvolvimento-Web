@@ -1,0 +1,30 @@
+:root {
+  font-size: 62.5%;
+}
+main {
+  max-width: 420rem;
+  margin: auto;
+  padding: 24px;
+  background: lightgray;
+}
+h1 {
+  font-size: 4.8rem;    
+}
+.boxImage {
+  max-width: 42rem;
+}
+img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3/1;
+  object-fit: cover;
+  object-position: center;
+}
+p {
+  font-size: 2rem;
+}
+@media (min-width: 42px) {
+  main {
+    background: paleturquoise;
+  }
+}

@@ -1,0 +1,118 @@
+footer {
+  background: linear-gradient(315deg, #2966c2, #2865c2, #1e4b8f);
+  text-align: center;
+  color: white;
+  padding: 2.4rem;
+}
+.contanier article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5.6rem;
+}
+footer h3 {
+  font-size: 1.8rem;
+  margin-top: 1.6rem;
+  text-shadow: 1px 1px 1px #0004;
+}
+.subscribe {
+  padding: 0.4rem;
+}
+.subscribe h3 {
+  margin-top: 2.4rem;
+  font-size: 2rem;
+}
+.subscribe p {
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+}
+.subscribe form {
+  margin-top: 2.4rem;
+  font-size: 1.4rem;
+  width: 100%;
+  display: flex;
+  gap: 0.8rem;
+}
+.subscribe form input {
+  font-size: 1.4rem;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  border: none;
+  flex: 1;
+}
+.subscribe form button {
+  margin-top: 0.6rem;
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+  width: 10rem;
+  background: linear-gradient(#ffc44f, #cc9d30);
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 2px #0004;
+  box-shadow: 1px 1px 2px #0002;
+  transition: filter 200ms, sacle 200ms;
+}
+.subscribe form button:hover {
+  cursor: pointer;
+  filter: brightness (1.05);
+  scale: 1.01;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+}
+.contacts h3 {
+  margin-bottom: 0.8rem;
+}
+.contacts p {
+  font-size: 1.4rem;
+}
+.socialMedias {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.socialMedias a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.socialMedias .logo {
+  max-width: 1.8rem;
+}
+
+.socialMedias .logo img {
+  width: 100%;
+}
+.local {
+  width: 100%;
+  padding: 2.4rem;
+}
+.local iframe {
+  width: 100%;
+  margin-top: 1.6rem;
+}
+.local p {
+  font-size: 1.4rem;
+  margin-top: 0.8rem;
+}
+.copyrigth {
+  font-size: 1.6rem;
+  margin-top: 1.2rem;
+  background: #fff4;
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+  text-shadow: 1px 1px 1px #0004;
+  display: block;
+}
