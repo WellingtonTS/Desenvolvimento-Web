@@ -6,6 +6,8 @@ const students = [
     { id: 5, name: "Amanda", average: 8, birth: 1992 },
     { id: 6, name: "Pedro", average: 7, birth: 1998 },
     { id: 7, name: "Pedro", average: 7, birth: 2000 },
+    { id: 8, name: "Dudu", average: 7, birth: 2007 },
+    { id: 9, name: "Nathan", average: 7, birth: 2006 },
   ];
 
     console.log(students.find((value) => {
@@ -25,6 +27,8 @@ const students = [
     }));
 
     console.log(students.find(value => value.average >= 7));
+
+    
     console.log(students.filter((value) => value.average >= 7));
     console.table(students.filter((value) => value.average >= 7));
     console.table(students.filter((value) => value.birth >= 2000));
