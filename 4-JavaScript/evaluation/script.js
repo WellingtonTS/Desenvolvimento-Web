@@ -6,8 +6,8 @@
 let Sting = "1";
 let Number = 1;
 let Boolean = true;
-let myFunction = () => {};
-let Array = [];
+let myFunction = () => {}; //menor função válida
+let Array = [1, true, {}];
 let Object = {};
 
 
@@ -25,9 +25,10 @@ console.log(num1 / num2);
 console.log(num1 % num2);
 console.log(num1 ** num2);
 
-console.log(num3 ** (1/2)); //square root
-var raizQuadrada = Math.sqrt(num3);
+console.log(num3 ** (1/2)); // raiz cúbica (1/3)...
+console.log(Math.sqrt(144));
 
+var raizQuadrada = Math.sqrt(num3);
 console.log(raizQuadrada);
 
 
@@ -57,10 +58,14 @@ console.log(list);
 // Questão 5 (for):
 // Liste todos os valores do array criado na questão anterior ultilizando o for.
 
-var myArray = [list]; // O array criado anteriormente
+var myArray = [list]; 
 
 for (var i = 0; i < myArray.length; i++) {
   console.table(myArray[i]);
+}
+
+for (const iterator of myArray) {
+  console.log(iterator);
 }
   
 
@@ -86,21 +91,30 @@ while (count <= 500) {
 // A velocidade da pista é de 60km/h
 
 
-function limiteMulta(velocidade) {
-    const limiteVelocidade = 60;
-    
-    if (velocidade > limiteVelocidade) {
-      console.log("Motorista multado por velocidade alta!");
-    } else if (velocidade < limiteVelocidade / 2) {
-      console.log("Motorista multado por velocidade baixa!");
-    } else {
-        console.log("Motorista não foi multado");
-      } 
-  }
+const maxSpeed = 60;
+const speed = 69;
 
-limiteMulta(70);
-limiteMulta(25);
-limiteMulta(31);
+if (speed > maxSpeed || speed < maxSpeed / 2) {
+  console.log("Muldado");
+} else {
+  console.log("Vai com Deus");
+}
+
+// function limiteMulta(velocidade) {
+//     const limiteVelocidade = 60;
+        
+//     if (velocidade > limiteVelocidade) {
+//       console.log("Motorista multado por velocidade alta!");
+//     } else if (velocidade < limiteVelocidade / 2) {
+//       console.log("Motorista multado por velocidade baixa!");
+//     } else {
+//         console.log("Motorista não foi multado");
+//       } 
+//   }
+
+// limiteMulta(70);
+// limiteMulta(25);
+// limiteMulta(31);
 
 
 
@@ -110,17 +124,24 @@ limiteMulta(31);
 // Apresente os novos salários e o novo total em folha dessa empresa
 
 const salary = [2000, 2800, 3000, 4000, 2200, 7500, 3650, 8000, 2000, 5000];
-const aumento = 0.10;
 
-const novosSalarios = [];
-let novoTotalFolha = 0;
+const newSalary = salary.map((salary) => salary * 1.1);
+console.log(newSalary);
 
-for (let i = 0; i < salary.length; i++) {
-  const salarioAtual = salary[i];
-  const novoSalario = salarioAtual + (salarioAtual * aumento);
-  novosSalarios.push(novoSalario);
-  novoTotalFolha += novoSalario;
-}
-console.log("Salário atuais", salary);
-console.log("Novos salários:", novosSalarios);
-console.log("Novo total em folha:", novoTotalFolha);
+const sumNewSalary = newSalary.reduce((a, b) => a + b);
+console.log(sumNewSalary);
+
+
+// const aumento = 0.10;
+// const novosSalarios = [];
+// let novoTotalFolha = 0;
+
+// for (let i = 0; i < salary.length; i++) {
+//   const salarioAtual = salary[i];
+//   const novoSalario = salarioAtual + (salarioAtual * aumento);
+//   novosSalarios.push(novoSalario);
+//   novoTotalFolha += novoSalario;
+// }
+// console.log("Salário atuais", salary);
+// console.log("Novos salários:", novosSalarios);
+// console.log("Novo total em folha:", novoTotalFolha);
