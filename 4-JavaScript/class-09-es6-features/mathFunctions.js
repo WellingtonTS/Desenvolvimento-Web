@@ -17,3 +17,4 @@ function div(num1, num2) {
 export const mathOperations = {
     sumNumbers, sub, mul, div,
 };
+
