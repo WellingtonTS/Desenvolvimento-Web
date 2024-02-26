@@ -6,11 +6,11 @@
 
 form {
   width: 240px;
-  margin: 32px;
+  margin: 32px auto;
 }
 
-label {
-  margin-top: 12px;
+section {
+  margin-top: 16px;
 }
 
 input {
@@ -25,5 +25,8 @@ button {
 }
 
 .error {
-  color: red
+  color: red;
+  font-size: 12px;
+  position: absolute;
+  display: block;
 }
